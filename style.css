@@ -1,0 +1,50 @@
+.product-title {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen.x {
+    display: none;
+}
+
+.full-screen .text {
+    width: 90%;
+    max-width: 500px;
+    max-height: 80%;
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+}
+
+.full-screen .text .btn-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+}
